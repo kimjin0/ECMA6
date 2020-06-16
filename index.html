@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+    </head>
+    <body>
+        <script>
+            class User {
+                constructor(name) {
+                    this.name = name;
+                }
+            }
+
+            user = new User("kimjin0");
+            console.log(user.name);
+
+            // Array.find() : ES6문법
+            const array1 = [5, 12, 8, 130, 44];
+            const found = array1.find((item) => item > 20);
+            console.log(found);
+
+            // Array.find() : valilaJS
+            fund = array1.find(function (item) {
+                return item > 13;
+            });
+            console.log(fund);
+
+            //Array.findIndex : valilaJS
+            found1 = array1.findIndex(function (item) {
+                return item > 13;
+            });
+            console.log(found1);
+
+            // Array.findIndex() : ES6문법
+            found1 = array1.findIndex((item) => item > 13);
+            console.log(found1);
+        </script>
+    </body>
+</html>
